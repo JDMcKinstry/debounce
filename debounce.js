@@ -1,6 +1,3 @@
-/**	debounce(callback, arguments[], delayTime)	||	debounce.apply(element, [callback, arguments[], delayTime])
- *		Function.debounce(element, arguments[], delayTime)
- **/
 ;(function() {
 	var debounceTimer;
 	function debounce(cb, args, delayTime) {
@@ -12,11 +9,11 @@
 	}
 	window.hasOwnProperty("debounce") || (window.debounce = debounce);
 	
+	/**	USE THE FOLLOWING WITH CAUTION || REMOVE IF YOU DON'T WANT TO APPEND TO FUNCTION OBJECT **/
 	function funcDebounce($this, args, delayTime) {
 		var cb = this;
 		return debounce.apply($this, [this, args, delayTime])
 	}
-	
 	Object['defineProperty'] && !Function.prototype.hasOwnProperty('funcDebounce')
 		? Object.defineProperty(Function.prototype, 'debounce', { value: funcDebounce })
 			: Function.prototype.debounce = funcDebounce;
