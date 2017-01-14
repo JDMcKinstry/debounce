@@ -1,7 +1,7 @@
 # debounce
 Simple and EZ JavaScript debounce(fire method after short delay) method.
 
-This is pretty short and sweet and makes dealing with issues such as multiple fires dureing user typing events far easier to deal with.
+This is pretty short and sweet and makes dealing with issues such as multiple fires during user typing events far easier to deal with.
 
 Uses are pretty simple and EZ!
 
