@@ -11,9 +11,9 @@ Uses are pretty simple and EZ!
  - arguments: An array of arguments to pass to your callback method.
 
 ```javascript
-debounce(callback, object, delay, arguments)
+debounce(callback, arguments, delay, object)
 ```
 ```javascript
 // if you keep end code and choose to simply use as a Function property method
-method.debounce(object, delay, arguments)
+method.debounce(arguments, delay, object)
 ```
