@@ -6,9 +6,9 @@ This is pretty short and sweet and makes dealing with issues such as multiple fi
 Uses are pretty simple and EZ!
 
  - callback: The Function to fire at end of given time.
- - object: Will become `this` within the scope of your callback.
- - delay: In milliseconds, the time to wait before firing.
  - arguments: An array of arguments to pass to your callback method.
+ - delay: In milliseconds, the time to wait before firing.
+ - object: Will become `this` within the scope of your callback.
 
 ```javascript
 debounce(callback, arguments, delay, object)
