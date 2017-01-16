@@ -1,4 +1,4 @@
-/**	debounce(callback, arguments, delay, object)	||	Function.debounce(arguments, delay, object)	||	lib.debounce(cb, args, delay)
+/**	debounce(callback, arguments, delay, object)	||	Function.debounce(arguments, delay, object)	||	lib.debounce(cb, args, delay, object=lib)
  *	Method to help reduce multifire issues 
  **/
 ;(function() {
@@ -11,8 +11,8 @@
 	}
 	window.hasOwnProperty("debounce") || (window.debounce = debounce);
 	/**	CAUTION	APPENDS TO FUNCTION OBJECT **/
-	/**	Function based libs (like jQuery) will be lib.debounce(cb, args, delay)	**/
-	function funcDebounce(args, delay, obj) { return args instanceof Function ? debounce(args, delay, obj, this) : debounce(this, args, delay, obj); }
+	/**	Function based libs (like jQuery) will be lib.debounce(cb, args, delay, object=lib)	**/
+	function funcDebounce(args, delay, obj) { return args instanceof Function ? debounce(args, delay, obj, void 0 != arguments[3] ? arguments[3] : this) : debounce(this, args, delay, obj); }
 	if (window.debounce === debounce) {
 		Object['defineProperty'] && !Function.prototype.hasOwnProperty('funcDebounce')
 			? Object.defineProperty(Function.prototype, 'debounce', { value: funcDebounce })
