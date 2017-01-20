@@ -14,8 +14,9 @@ Uses are pretty simple and EZ!
  - arguments: An array of arguments to pass to your callback method.
   - if `null`, then will default to event passed arguments (Example: IN $(window).resize(debounce(func, null... ARGS would be EVENT ARGS)
  - delay: In milliseconds, the time to wait before firing.
+  - Default: 250 milliseconds
  - object: Will become `this` within the scope of your callback.
-  - Defaults to `this`
+  - Default: `this`
 
 ```javascript
 debounce(callback, arguments, delay, object)
