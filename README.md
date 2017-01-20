@@ -3,6 +3,14 @@ Simple and EZ JavaScript debounce(fire method after short delay) method.
 
 This is pretty short and sweet and makes dealing with issues such as multiple fires during user typing events far easier to deal with.
 
+####Quick Links:
+ - [Just `debounce` method](https://cdn.rawgit.com/JDMcKinstry/debounce/31161904/debounce.js)
+  - [minimized](https://cdn.rawgit.com/JDMcKinstry/debounce/31161904/debounce.min.js)
+ - [Just `throttle` method](https://cdn.rawgit.com/JDMcKinstry/debounce/31161904/throttle.js)
+  - [minimized](https://cdn.rawgit.com/JDMcKinstry/debounce/31161904/throttle.min.js)
+ - [Both Methods](https://cdn.rawgit.com/JDMcKinstry/debounce/31161904/debounce_throttle.js)
+  - [minimized](https://cdn.rawgit.com/JDMcKinstry/debounce/31161904/debounce_throttle.min.js)
+
 Uses are pretty simple and EZ!
 
  - callback: The Function to fire at end of given time.
