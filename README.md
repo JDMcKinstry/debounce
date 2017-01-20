@@ -12,8 +12,10 @@ Uses are pretty simple and EZ!
 
  - callback: The Function to fire at end of given time.
  - arguments: An array of arguments to pass to your callback method.
+  - if `null`, then will default to event passed arguments (Example: IN $(window).resize(debounce(func, null... ARGS would be EVENT ARGS)
  - delay: In milliseconds, the time to wait before firing.
  - object: Will become `this` within the scope of your callback.
+  - Defaults to `this`
 
 ```javascript
 debounce(callback, arguments, delay, object)
