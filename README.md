@@ -13,7 +13,3 @@ Uses are pretty simple and EZ!
 ```javascript
 debounce(callback, arguments, delay, object)
 ```
-```javascript
-// if you keep end code and choose to simply use as a Function property method
-method.debounce(arguments, delay, object)
-```
