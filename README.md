@@ -13,3 +13,10 @@ Uses are pretty simple and EZ!
 ```javascript
 debounce(callback, arguments, delay, object)
 ```
+
+##BONUS!
+###`throttle` method fires so many times per second until event has ended.
+
+```javascript
+throttle(callback, arguments, delay, object)
+```
